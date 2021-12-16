@@ -1,0 +1,68 @@
+.overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: white;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+
+  .dialog-header{
+    font-size: 16px;
+    color: var(--primary-80-forcolor);
+    font-weight: 500;
+    min-height: 65px;
+    outline: none;
+    white-space: nowrap;
+    flex-direction: row;
+    box-sizing: border-box; 
+    display: flex;
+    align-items: center;
+    align-content: center;
+    max-width: 100%;
+    justify-content: flex-start;
+    border-bottom: 1px solid var(--primary-10-border);
+    padding: 10px 20px;
+  }
+
+  .dialog-content {
+    height: -webkit-fill-available;
+    padding: 15px;
+    border-bottom: 1px solid var(--primary-10-border);
+  }
+  
+  .mat-dialog-actions {
+      border-top: none;
+      height: auto;
+      padding: 15px 0;
+      justify-content: flex-start;
+      align-self: flex-end;
+  
+    button {
+      text-transform: uppercase;
+      min-height: 36px;
+      min-width: 88px;
+    }
+  }
+
+  .check-section {
+    margin: 12px 0;
+  }
+  
+  .check-margin {
+    margin: 0 12px;
+  }
+}
